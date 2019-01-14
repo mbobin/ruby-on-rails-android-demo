@@ -14,7 +14,7 @@ chdir APP_ROOT do
   # Add necessary setup steps to this file.
 
   puts '== Installing dependencies =='
-  system! 'pkg install clang make ruby-dev pkg-config libxml2 libxml2-dev libxslt libxslt-dev libffi libffi-dev libsqlite libsqlite-dev nodejs'
+  system! 'pkg install clang make ruby-dev pkg-config openssl libxml2 libxml2-dev libxslt libxslt-dev libffi libffi-dev libsqlite libsqlite-dev nodejs'
   system! 'gem install pkg-config'
   system! 'gem install bundler --conservative'
   system! 'bundle config build.nokogiri --use-system-libraries'
